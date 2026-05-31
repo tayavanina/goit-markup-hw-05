@@ -456,10 +456,10 @@
 
         <div class="footer-subscribe">
           <p class="title-subscribe">Subscribe</p>
-          <div class="input-footer">
+          <form class="input-footer">
             <input
               class="footer-mail-input"
-              type="mail"
+              type="email"
               name="mail"
               placeholder="E-mail"
             />
@@ -469,13 +469,13 @@
                 <use href="./images/icons.svg#icon-subs"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
 
-    <div class="modal-overlay">
-      <div class="modal">
+    <div id="modal" class="modal-overlay is-open">
+      <form class="modal">
         <div class="icon-close">
           <svg width="12" height="12" class="svg-close">
             <use href="./images/icons.svg#icon-close"></use>
@@ -487,44 +487,50 @@
 
         <label for="fullname">
           Name
-          <div class="input-wrapper">
-            <input type="text" name="fullname" class="form-input" />
+          <span class="input-wrapper">
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              class="form-input"
+            />
             <svg width="12" height="12" class="svg-modal">
               <use href="./images/icons.svg#icon-illustration"></use>
             </svg>
-          </div>
+          </span>
         </label>
 
         <label for="phone">
           Phone
-          <div class="input-wrapper">
-            <input type="tel" name="phone" class="form-input" />
+          <span class="input-wrapper">
+            <input type="tel" id="phone" name="phone" class="form-input" />
             <svg width="12" height="12" class="svg-modal">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
-          </div>
+          </span>
         </label>
 
         <label for="mail">
           Email
-          <div class="input-wrapper">
-            <input type="mail" name="mail" class="form-input" />
+          <span class="input-wrapper">
+            <input type="email" id="mail" name="mail" class="form-input" />
             <svg width="12" height="12" class="svg-modal">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>
-          </div>
+          </span>
         </label>
 
         <label for="comment">
           Comment
-          <div class="input-wrapper">
+          <span class="input-wrapper">
             <textarea
               class="texterea-input"
+              id="comment"
               name="comment"
               placeholder="Text input"
               rows="5"
             ></textarea>
-          </div>
+          </span>
         </label>
 
         <div>
@@ -546,7 +552,7 @@
             >
           </label>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
