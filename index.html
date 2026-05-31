@@ -453,7 +453,100 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe">
+          <p class="title-subscribe">Subscribe</p>
+          <div class="input-footer">
+            <input
+              class="footer-mail-input"
+              type="mail"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn-subs">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-subs"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="icon-close">
+          <svg width="12" height="12" class="svg-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </div>
+        <h2 class="modal-title">
+          Leave your contacts and we will call you back
+        </h2>
+
+        <label for="fullname">
+          Name
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" />
+            <svg width="12" height="12" class="svg-modal">
+              <use href="./images/icons.svg#icon-illustration"></use>
+            </svg>
+          </div>
+        </label>
+
+        <label for="phone">
+          Phone
+          <div class="input-wrapper">
+            <input type="tel" name="phone" class="form-input" />
+            <svg width="12" height="12" class="svg-modal">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+        </label>
+
+        <label for="mail">
+          Email
+          <div class="input-wrapper">
+            <input type="mail" name="mail" class="form-input" />
+            <svg width="12" height="12" class="svg-modal">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+        </label>
+
+        <label for="comment">
+          Comment
+          <div class="input-wrapper">
+            <textarea
+              class="texterea-input"
+              name="comment"
+              placeholder="Text input"
+              rows="5"
+            ></textarea>
+          </div>
+        </label>
+
+        <div>
+          <input
+            type="checkbox"
+            name="accept"
+            id="accept"
+            class="check-input"
+          />
+          <label for="accept">
+            <span class="input-wrapper-check">
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#icon-check-mark"></use>
+              </svg>
+            </span>
+            <span
+              >I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a></span
+            >
+          </label>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
