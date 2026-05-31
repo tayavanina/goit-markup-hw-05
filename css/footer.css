@@ -112,7 +112,7 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
-  margin-left: 86px;
+  margin-left: auto;
   width: 453px;
   height: 80px;
 }
@@ -144,7 +144,7 @@
   font-size: 12px;
 
   /* line-height: 14px; */
-  line-height: 1.16667;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
 }

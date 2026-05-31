@@ -475,17 +475,15 @@
     </footer>
 
     <div id="modal" class="modal-overlay">
-      <form class="modal">
-        <div class="icon-close">
-          <svg width="12" height="12" class="svg-close">
+      <div class="modal">
+        <button type="button" class="icon-close">
+          <svg width="8" height="8" fill="#2e2f42" class="svg-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </div>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
 
-        <label for="fullname">
+        <label for="fullname" class="label-form">
           Name
           <span class="input-wrapper">
             <input
@@ -494,33 +492,33 @@
               name="fullname"
               class="form-input"
             />
-            <svg width="12" height="12" class="svg-modal">
+            <svg width="18" height="24" class="svg-modal">
               <use href="./images/icons.svg#icon-illustration"></use>
             </svg>
           </span>
         </label>
 
-        <label for="phone">
+        <label for="phone" class="label-form">
           Phone
           <span class="input-wrapper">
             <input type="tel" id="phone" name="phone" class="form-input" />
-            <svg width="12" height="12" class="svg-modal">
+            <svg width="18" height="24" class="svg-modal">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
           </span>
         </label>
 
-        <label for="mail">
+        <label for="email" class="label-form">
           Email
           <span class="input-wrapper">
             <input type="email" id="mail" name="mail" class="form-input" />
-            <svg width="12" height="12" class="svg-modal">
+            <svg width="18" height="24" class="svg-modal">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>
           </span>
         </label>
 
-        <label for="comment">
+        <label for="comment" class="label-form">
           Comment
           <span class="input-wrapper">
             <textarea
@@ -540,19 +538,21 @@
             id="accept"
             class="check-input"
           />
-          <label for="accept">
+          <label for="accept" class="label-form">
             <span class="input-wrapper-check">
-              <svg width="12" height="12">
+              <svg width="10" height="8">
                 <use href="./images/icons.svg#icon-check-mark"></use>
               </svg>
             </span>
-            <span
+            <span class="accept-text"
               >I accept the terms and conditions of the
-              <a href="#">Privacy Policy</a></span
+              <a class="accept-link" href="#">Privacy Policy</a></span
             >
           </label>
         </div>
-      </form>
+
+        <button class="btn-send" type="submit">Send</button>
+      </div>
     </div>
   </body>
 </html>
