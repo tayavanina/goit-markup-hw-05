@@ -70,10 +70,14 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:focus + .svg-close,
-.icon-close:hover + .svg-close {
+.icon-close:focus,
+.icon-close:hover {
   background: #404bbf;
   border-color: #404bbf;
+}
+
+.icon-close:focus .svg-close,
+.icon-close:hover .svg-close {
   fill: #fff;
 }
 
