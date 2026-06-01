@@ -70,8 +70,8 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:focus,
-.icon-close:hover {
+.icon-close:focus + .svg-close,
+.icon-close:hover + .svg-close {
   background: #404bbf;
   border-color: #404bbf;
   fill: #fff;
@@ -148,6 +148,7 @@ textarea {
   width: 360px;
   height: 120px;
   margin-bottom: 8px;
+  margin-top: 4px;
   background-color: #fcfcfc;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
@@ -218,7 +219,6 @@ textarea {
   opacity: 0;
 }
 .check-wrapper {
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -262,7 +262,7 @@ textarea {
   align-self: center;
   cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .btn-send:hover,
